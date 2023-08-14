@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>MERCCHANT FORM</h1>
+    <form id="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <label for="Number">PhoneNumber</label>
+        <input type="tel" id="number" name="number" maxlength="10">
+        <label for="website">website</label>
+        <input type="text" id="website" name="website">
+        <label for="contactname">contactname</label>
+        <input type="text" id="contact" name="contact">
+        <label for="phone">contactnumber</label>
+        <input type="tel" id="phone" name="phone" maxlength="10">
+        <label for="email">ContactMail</label>
+        <input type="email" id="another" name="another">
+        <label for="notes">Notes</label>
+        <textarea name="notes" id="notes" cols="30" rows="1"></textarea>
+         <label for="type">Type:</label>
+         <label for="Small">Small buisiness</label>
+         <input type="radio" name="small" id="small" value="small buisiness">
+         <label for="entre">Entreprise</label>
+         <input type="radio" name="entreprise" id="small" value="small">
+         <label for="entreprenuer">Entreprenuer</label>
+         <input type="radio" name="entreprenuer" id="small" value="small">
+         
+         <label for="category"> category</label>
+         <select name="category" id="category">
+            <option value="clothes">clothes</option>
+            <option value="toys">toys</option>
+            <option value="electronics">Electronics</option>
+            <option value="groceries">Groceries</option>
+            <option value="digital">Digital</option>
+         </select>
+         <label for="comm">commmission</label>
+         <input type="tel" name="commission" id="commission">;
+         <label for="activeform">Activeform</label>
+         <input type="date" name="date" id="date">
+         <label for="logo">LOGO</label>
+         <input type="file" name="file" id="file">
+         <label for="critical account">Critical Account</label>
+         <label for="yes">YES</label>
+         <input type="checkbox" name="yes" id="yes" value="Yes">
+         <label for="NO">NO</label>
+         <input type="checkbox" name="yes" id="yes" value="yes">
+        <label for="payment">Payment</label>
+        <input type="checkbox" name="payment" id="payment" value="cash on Payment">
+        <input type="checkbox" name="payment" id="payment" value="UPI">
+        <input type="checkbox" name="payment" id="payment" value="Card Payment">
+
+
+
+        <!-- Add more input fields as needed -->
+        <button type="submit" onsubmit="resetform()">Submit</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+            <th>website</th>
+            <th>contactname</th>
+            <th>contactnumber</th>
+            <th>ContactMail</th>
+            <th>notes</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>commission</th>
+            <th>activeform</th>
+            <th>LOGO</th>
+            <th>Critical Account</th>
+            <th>Payment</th>
+             <th>Action</th>
+            <!-- Add more header columns if needed -->
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Populated dynamically using JavaScript -->
+        </tbody>
+      </table>
+      
+
+     <script src="java.js"></script>
+</body>
+</html>
