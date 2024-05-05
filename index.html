@@ -8,7 +8,7 @@
 </head>
 <body>
    <h1>MERCCHANT FORM</h1>
-    <form id="myForm">
+    <form id="myForm" onsubmit="myfunction()">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Name">
         <label for="email">Email</label>
@@ -27,11 +27,11 @@
         <textarea name="notes" id="notes" cols="30" rows="1"></textarea>
          <label for="type">Type:</label>
          <label for="Small">Small buisiness</label>
-         <input type="radio" name="small" id="small" value="small buisiness">
+         <input type="radio" name="small" id="small business" value="small business">
          <label for="entre">Entreprise</label>
-         <input type="radio" name="entreprise" id="small" value="small">
+         <input type="radio" name="small" id="Entreprise" value="small">
          <label for="entreprenuer">Entreprenuer</label>
-         <input type="radio" name="entreprenuer" id="small" value="small">
+         <input type="radio" name="small" id="Entreprenuer" value="small">
          
          <label for="category"> category</label>
          <select name="category" id="category">
@@ -53,14 +53,16 @@
          <label for="NO">NO</label>
          <input type="checkbox" name="yes" id="yes" value="yes">
         <label for="payment">Payment</label>
-        <input type="checkbox" name="payment" id="payment" value="cash on Payment">
-        <input type="checkbox" name="payment" id="payment" value="UPI">
-        <input type="checkbox" name="payment" id="payment" value="Card Payment">
+        <input type="checkbox" name="payment" id="cash" value="cash on Payment">
+        <input type="checkbox" name="payment" id="upi" value="UPI">
+        <input type="checkbox" name="payment" id="Card" value="Card Payment">
 
 
 
         <!-- Add more input fields as needed -->
         <button type="submit">Submit</button>
+        
+
       </form>
       <table>
         <thead>
